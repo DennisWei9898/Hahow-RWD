@@ -5,3 +5,5 @@
 - 順便練習一下 Vue 純 Css 的 RWD 排版
 
 - 預覽網址：https://denniswei9898.github.io/Hahow-RWD/
+
+![image](https://github.com/DennisWei9898/Hahow-RWD/blob/main/cover.png)
