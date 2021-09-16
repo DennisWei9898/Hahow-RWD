@@ -65,5 +65,3 @@ let bell_audio=new Audio("https://drive.google.com/u/0/uc?id=1-bKplBkoEOcgak7Yqj
 $(".notifi").click(function(){
   bell_audio.play()
 })
-
-
