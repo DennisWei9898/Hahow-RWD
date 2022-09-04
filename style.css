@@ -76,7 +76,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url("https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.6435-9/236010082_4642937565725657_1386275256949585451_n.jpg?_nc_cat=108&_nc_rgb565=1&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BZeOrFMhYY8AX8aa6Ce&_nc_ht=scontent.ftpe7-3.fna&oh=74f031aa471581de2261470291480eda&oe=616526F2");
+  background-image: url("https://avatars.githubusercontent.com/u/37035864?v=4");
   background-size: cover;
   border: 2px solid #f3f3f1;
   z-index: 100;
@@ -145,8 +145,9 @@ body {
 .classes {
   margin-top: 50px;
   max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .classes a {
   text-decoration: none;

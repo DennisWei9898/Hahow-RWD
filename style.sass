@@ -33,7 +33,7 @@ $break_width2: 600px
 //預設圖片Url
 $url_teacher: "https://hahow.in/images/57ab3d5585b097070042067a"
 $url_class: "https://hahow.in/images/574fab4f206cd60900c52a67?width=300"
-$url_profile:"https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.6435-9/236010082_4642937565725657_1386275256949585451_n.jpg?_nc_cat=108&_nc_rgb565=1&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BZeOrFMhYY8AX8aa6Ce&_nc_ht=scontent.ftpe7-3.fna&oh=74f031aa471581de2261470291480eda&oe=616526F2"
+$url_profile: "https://avatars.githubusercontent.com/u/37035864?v=4"
 
 @mixin bsha
   box-shadow: 0px 0px 12px rgba(0,0,0,0.2)
@@ -51,22 +51,19 @@ $url_profile:"https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.6435-9/236010082_46429
   //   display: none
   // .footer
   //   display: none
-    
-  
-  
-  
+
 html,body
   margin: 0
   padding: 0
 
 body
   background-color: $color_grey
-  
+
 #app
   max-width: $content_max_width
   margin-left: auto
   margin-right: auto
-  
+
 .navbar
   display: inline-block
   height: 50px
@@ -103,7 +100,7 @@ body
     font-size: 20px
   img
     margin-right: 3px
-    
+
 .nav_list.right
   display: inline-block
   text-align: center
@@ -139,9 +136,6 @@ body
       opacity: 1
       transform: scale(1.3)
 
-
-
-  
 .banner
   height: 400px
   width: $content_max_width
@@ -162,14 +156,13 @@ body
     +bsha
     img
       width: 1000px
-  
-
 
 .classes
   margin-top: 50px
   max-width: $width_class*4+30px*4
-  margin-left: auto
-  margin-right: auto
+  display: flex
+  flex-wrap: wrap
+  align-items: center
   a
     text-decoration: none
 .classbox
@@ -199,7 +192,7 @@ body
       transform: scale(1.13)
     .bottom .valuebar
       width: 200px
-    
+
   .tag
     width: 100%
     text-align: center
@@ -219,7 +212,7 @@ body
     right: 0
     border-radius: 5px 5px 0px 0px
     transition: 0.3s
-    
+
   .bookbtn
     width: 42px
     height: 42px
@@ -241,12 +234,12 @@ body
     &:hover
       background-color: $color_dark_orange
       color: white
-    
+
 .top
   height: $height_toppart
   overflow: hidden
   .classpicture
-  
+
 .bottom
   height: $height_bottompart
   padding: $padding_class
@@ -255,7 +248,7 @@ body
     margin-top: 0px
   .texts
     font-size: $size_para
-    letter-spacing: 1px 
+    letter-spacing: 1px
     .orange
       padding-left: 5px
       color: $color_orange
@@ -264,7 +257,7 @@ body
       position: absolute
       top: 0
       right: 0
-    margin-bottom: 10px
+      margin-bottom: 10px
   .progressbar
     height: 10px
     margin-bottom: 10px
@@ -321,14 +314,13 @@ body
     a
       color: rgba(0, 0, 0, 0.65)
       text-decoration: none
-  
-    
+
 @media screen and (max-width: $break_width)
   #app
-    width:$break_width
+    width: $break_width
   .navbar
     height: 60px
-    width:$break_width
+    width: $break_width
     .icon
       margin-left: calc(5% - 20px)
   .nav_list.left
@@ -364,14 +356,14 @@ body
     .middle
       margin-right: 5%
       width: 30%
-      
+
 @media screen and (max-width: $break_width2)
   #app
     margin-left: 0
     margin-right: 0
-    width:$break_width2
+    width: $break_width2
   .navbar
-    width:$break_width2
+    width: $break_width2
   .nav_list.right
     margin-left: calc(40% - 100px)
     .mycls
@@ -379,7 +371,7 @@ body
     .profile
       margin-left: 0px
   .banner
-    width:$break_width2
+    width: $break_width2
   .classes
     display: block
     width: 100%
@@ -429,7 +421,7 @@ body
         top: -67px
         margin-left: 180px
   .footer
-    width:$break_width2
+    width: $break_width2
     .left
       margin-left: 20%
       width: 25%
