@@ -3,7 +3,7 @@ let apiurl="https://awiclass.monoame.com/api/command.php?type=get&name=hahowdata
 let vm = new Vue({
   el:"#app",
   data: {
-    classes: [],
+    classdatas: [],
     screen_size: false,
     window: {
       width: 0
@@ -34,7 +34,10 @@ let vm = new Vue({
 $.ajax({
   url:apiurl,
   success: function(res){
-    vm.classes=JSON.parse(res)
+    var obj=JSON.parse(res);
+    console.log(obj);
+    vm.classdatas=obj;
+    Vue.set(vm,"classdatas",obj);
   }
 })
 
@@ -65,3 +68,5 @@ let bell_audio=new Audio("https://drive.google.com/u/0/uc?id=1-bKplBkoEOcgak7Yqj
 $(".notifi").click(function(){
   bell_audio.play()
 })
+
+

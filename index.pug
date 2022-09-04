@@ -1,7 +1,7 @@
 #app
   .navbar
     .icon
-      img(src="https://hahow.in/static/media/logo-black.59fdbe30.svg")
+      img(src="https://hahow.in/static/media/logo-black.59fdbe302d195a3dc848e4f805f681b3.svg")
     .nav_list.left
       span.explore
         i.fa.fa-fw.fa-th-large
@@ -10,7 +10,7 @@
         i.fa.fa-pencil.fa-fw
         | 開課
       span.course
-        img(src="https://hahow.in/static/media/mini-cart.0dba8458.svg")
+        i.fa.fa-folder
         | 課程
     .nav_list.right
       h4.mycls 我的課程
@@ -22,7 +22,7 @@
     .center_banner
       img.img1(src="https://2017.awiclass.monoame.com/img/hahow_progress.png")
   .classes
-    a.classbox(v-for="cls in classes" v-bind:href="'https://hahow.in/courses/'+cls._id" target="_blank")
+    a.classbox(v-for="cls in classdatas" v-bind:href="'https://hahow.in/courses/'+cls._id" target="_blank")
       .teacher(v-bind:style="'background-image:url('+cls.owner.profileImageUrl+')'")
       .top
         .classpicture(v-bind:style="'background-image:url('+cls.coverImage.url+')'")
